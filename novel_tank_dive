@@ -1,10 +1,18 @@
+# Fish height during the novel tank dive can be an indicator of anxiety.
+# Users can obtain a framewise list of Y coordinates from their preferred open-source tracking software.
+# Import required libraries.
+
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import genfromtxt
 import PIL
 import os
-my_path = '~path/'
-my_file = 'y.csv'
+
+# Enter the file path and name for the Y coordinate data.
+# Note: Ensure that your video footage was captured with an orientation in which the target axis represent physical height.
+
+my_path = 'path_to_Y_coordinates/'
+my_file = 'file.csv'
 y_vals = genfromtxt(my_path+my_file, delimiter=',')
 y_array=np.array(y_vals)
 # Remove NaN values
