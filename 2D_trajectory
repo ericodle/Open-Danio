@@ -13,8 +13,8 @@ my_file = 'file_name.csv'
 # Assumes XY coordinates are organized in adjacent colums in the csv file.
 
 from numpy import genfromtxt
-x_vals = genfromtxt(my_path+my_file[0], delimiter=',')
-y_vals = genfromtxt(my_path+my_file[1], delimiter=',')
+x_vals = genfromtxt(my_path+my_file, delimiter=',')[0]
+y_vals = genfromtxt(my_path+my_file, delimiter=',')[1]
 
 # Convert coordinate lists into numpy arrays.
 
