@@ -5,7 +5,7 @@ from numpy import genfromtxt
 from itertools import combinations
 from math import hypot
 # Currently, the user has to pre-format their xy data output as a 2-column csv.
-raw_data = genfromtxt('+path/testdata.csv', delimiter=',')
+raw_data = genfromtxt('~path/testdata.csv', delimiter=',')
 # Convert from csv into a python-readable data array. Print it out to confirm.
 coords = np.array(raw_data)
 # Define each xy pair as a point, and find the distance between each point and every other point (n choose 2)
