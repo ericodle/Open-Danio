@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-my_path = 'path_to_your_xy_coordinate/file.csv'
-my_file = 'my_path/file.csv'
+# Enter the file path and name for the Y coordinate data.
+my_path = 'path_to_your_xy_coordinate/'
+my_file = 'file_name.csv'
 
 # Assumes XY coordinates are organized in adjacent colums in the csv file.
 
