@@ -3,7 +3,7 @@ import numpy as np
 from numpy import genfromtxt
 import PIL
 import os
-my_path = '/home/eo/Desktop/'
+my_path = '~path/'
 my_file = 'y.csv'
 y_vals = genfromtxt(my_path+my_file, delimiter=',')
 y_array=np.array(y_vals)
@@ -97,4 +97,4 @@ results_header=('Min_1','Min_2','Min_3','Min_4','Min_5')
 results=(min1_time, min2_time, min3_time, min4_time, min5_time)
 dict= {'Test_Minute':results_header, 'Top_Zone_Time(sec)':results}
 df = pd.DataFrame(dict)
-df.to_csv('/home/eo/Desktop/results.csv')
+df.to_csv('~path/results.csv')
