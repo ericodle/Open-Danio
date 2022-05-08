@@ -24,7 +24,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Talk about this project here.
+Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I found conventional behavioral analysis tools to be lacking. To address this issue, I began writing simple scripts to supplement the raw XY coordinate output obtained through the excellent and open-source animal tracking projects such as [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai) and [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut). As my labmates and I learned more about programming, our modules became more ambitious. Though still in its infancy, we hope OpenDanio inspires fellow zebrafish researchers to contribute to our project, incorporate our tools, and take full control of their own data processing workflows! 
+
+It's your data. You should decide what the computer does with it.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
