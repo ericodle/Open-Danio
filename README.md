@@ -31,9 +31,6 @@ It's your data. You should decide what the computer does with it.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
-
-Add content here.
 
 ### Prerequisites
 
