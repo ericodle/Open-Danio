@@ -20,7 +20,6 @@
 </div>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About this Project
 
@@ -30,7 +29,6 @@ It's your data. You should decide what the computer does with it.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ### Prerequisites
 
@@ -43,7 +41,6 @@ Walkthrough video coming soon!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- ROADMAP -->
 ## Content
 
@@ -53,8 +50,6 @@ Walkthrough video coming soon!
 - [ ] Nested Feature
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -71,17 +66,12 @@ If this is your first pull request, just follow the steps below:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the GNU Lesser General Public License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
