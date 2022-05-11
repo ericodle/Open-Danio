@@ -37,50 +37,23 @@ Add content here.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+Open Danio gives researchers a way to interpret the framewise XY corrdinates generated from animal tracking tools. Therefore, users have to provide their own animals, video files, and tracking output data. As previously stated, we recommend using either DeepLabCut or IdTrackerAI, depending on your available hardware and research requirements. For example, DeepLabCut is excellent at pose estimation, but in our experience, requires a strong GPU and a lot of time to train. Moreover, DeepLabCut has been better for our single-animal tracking experiments, whereas IdTrackerAI is great for simultaneous multi-animal tracking in the same region of interest. This is because IdTrackerAI was specifically designed to keep track of animal identitiy in a group, which becomes a non-trivial challenge when you film multiple crossing zebrafish from a top-down angle.
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Walkthrough
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Walkthrough video coming soon!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Content
 
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Nested Feature
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,16 +83,6 @@ Distributed under the GNU Lesser General Public License. See `LICENSE.txt` for m
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
