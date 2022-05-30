@@ -33,11 +33,81 @@ It's your data. You should decide what the computer does with it.
 ### Prerequisites
 
 Open Danio gives researchers a way to interpret the framewise XY corrdinates generated from animal tracking tools. Therefore, users have to provide their own animals, video files, and tracking output data. As previously stated, we recommend using either DeepLabCut or IdTrackerAI, depending on your available hardware and research requirements. For example, DeepLabCut is excellent at pose estimation, but in our experience, requires a strong GPU and a lot of time to train. Moreover, DeepLabCut has been better for our single-animal tracking experiments, whereas IdTrackerAI is great for simultaneous multi-animal tracking in the same region of interest. This is because IdTrackerAI was specifically designed to keep track of animal identitiy in a group, which becomes a non-trivial challenge when you film multiple crossing zebrafish from a top-down angle.
+## Getting Started
 
-<!-- USAGE EXAMPLES -->
-## Walkthrough
+Since we are not training neural networks in this project, users should be able to reproduce our results with a modern laptop.
 
-Walkthrough video coming soon!
+Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP".
+
+Alternatively, you can also clone the repo directly using the following commands.
+
+  ```sh
+  # Replace "your_folderpath_here" with the actual folder where you want the project to go.
+  cd /your_folderpath_here
+  git clone git@github.com:ericodle/JP_BERT.git
+  ```
+
+> __For this example, the working directory is the repository root directory.__ 
+
+### Install dependencies using pip
+
+  ```sh
+  # Install dependencies if necessary. 
+  # You may want to work in a virtual environemnt. Conda environments are nice for that.
+  pip install transformers==3.0.2
+  pip install torch torchvision
+  pip install git
+  ```
+  
+### Get MeCab and IPADIC working
+
+The pre-trained BERT model used for this project employs the MeCab text segmenter for Japanese. Along with MeCab comes the IPADic tokenization dictionary, which must also be installed. The following code got everything working in our environment, but be prepared to do the incompatible dependency/missing package dance a bit before everything works.
+
+  ```sh
+  # First, install MeCab.
+  apt install aptitude swig 
+  aptitude install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file -y
+  pip install mecab-python3==0.996.6rc2
+  
+  # Next, install the Neologd ipadic dictionary---it contains more modern internet words.
+  git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+  echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
+  ```
+
+If everything went well, we should be able to perform the following test.
+
+  ```python
+  import MeCab
+  m=MeCab.Tagger("-Ochasen")
+  text = "私は機械学習が好きです。"
+  text_segmented = m.parse(text)
+  print(text_segmented)
+  ```
+MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
+         
+<pre>
+私        ワタシ      私        名詞-代名詞-一般  
+は        ハ         は        助詞-係助詞                         
+機械      キカイ      機械      名詞-一般                       
+学習      ガクシュウ   学習      名詞-サ変接続                 
+が        ガ         が        助詞-格助詞-一般                    
+好き      スキ        好き      名詞-形容動詞語幹                
+です      デス        です      助動詞  
+。         。         。       記号-句点                           
+</pre>
+
+You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
+
+### generate_ppx.py
+
+> This is the main project script. Open the .py file for helpful tips and enlightening comments. More importantly, our proposed perplexity model is coded as a FOR loop in this script.
+
+```sh
+# This will generate a ppx value for each N3 adverb question response. 
+# The questions are taken from N3_adverbs.csv under the "text" column.
+
+./generate_ppx.py
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
