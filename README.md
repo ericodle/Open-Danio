@@ -114,10 +114,9 @@ You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for diff
 <!-- ROADMAP -->
 ## Content
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-- [ ] Nested Feature
+- [ ] Shoal Analysis
+- [ ] Novel Tank Dive Analysis
+- [ ] Trajectory Analysis
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
