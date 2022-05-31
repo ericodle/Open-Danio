@@ -8,6 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
+    Our lab's license for the Smart2.0 Zebrafish tracking software suite produced by the company PANLAB had long expired and I got tired of scheduling time with the senior students to use the one cracked version we had running off a USB.
     This is my first coding project, and is little more than a collection of Python scripts I wrote during my biology M.Sc. thesis at National Taiwan Normal University. It's not sophisticated, but the sentimental value is through the roof!
     <br />
     <br />
@@ -33,90 +34,33 @@ It's your data. You should decide what the computer does with it.
 ### Prerequisites
 
 Open Danio gives researchers a way to interpret the framewise XY corrdinates generated from animal tracking tools. Therefore, users have to provide their own animals, video files, and tracking output data. As previously stated, we recommend using either DeepLabCut or IdTrackerAI, depending on your available hardware and research requirements. For example, DeepLabCut is excellent at pose estimation, but in our experience, requires a strong GPU and a lot of time to train. Moreover, DeepLabCut has been better for our single-animal tracking experiments, whereas IdTrackerAI is great for simultaneous multi-animal tracking in the same region of interest. This is because IdTrackerAI was specifically designed to keep track of animal identitiy in a group, which becomes a non-trivial challenge when you film multiple crossing zebrafish from a top-down angle.
+
 ## Getting Started
 
-Since we are not training neural networks in this project, users should be able to reproduce our results with a modern laptop.
-
-Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP".
+Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP". 
 
 Alternatively, you can also clone the repo directly using the following commands.
 
   ```sh
   # Replace "your_folderpath_here" with the actual folder where you want the project to go.
   cd /your_folderpath_here
-  git clone git@github.com:ericodle/JP_BERT.git
+  git clone git@github.com:ericodle/Open-Danio.git
   ```
 
 > __For this example, the working directory is the repository root directory.__ 
+> __You shouldn't need any special installations. If you do, just pip it up and PIP. IT. OUT.__ 
 
-### Install dependencies using pip
+### 2D_trajectory.py
 
-  ```sh
-  # Install dependencies if necessary. 
-  # You may want to work in a virtual environemnt. Conda environments are nice for that.
-  pip install transformers==3.0.2
-  pip install torch torchvision
-  pip install git
-  ```
-  
-### Get MeCab and IPADIC working
+Open-source tracking solutions didn't have readily-available trajectory image generators when I was doing my masters, so I made my own. Whatever tracking solution you use should spit out a video frame-wise XY coordinate table, which 2d_trajectory.py converts into a linear path the object (zebrafish) moved (swam). The input file assumes only two columns, with the first column representing X position and the second column representing Y position (often in pixel units). It's rudimentary, and perhaps my colleague Connor and I will fancy it up later. For now, I hope this script gives you ideas for writing your own trajectory mappper.
 
-The pre-trained BERT model used for this project employs the MeCab text segmenter for Japanese. Along with MeCab comes the IPADic tokenization dictionary, which must also be installed. The following code got everything working in our environment, but be prepared to do the incompatible dependency/missing package dance a bit before everything works.
+### novel_tank_dive.py
 
-  ```sh
-  # First, install MeCab.
-  apt install aptitude swig 
-  aptitude install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file -y
-  pip install mecab-python3==0.996.6rc2
-  
-  # Next, install the Neologd ipadic dictionary---it contains more modern internet words.
-  git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
-  echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -a
-  ```
+The Novel Tank Dive (NTD) is a standard zebrafish anxiety experiment. Ideally, the zebrafish spends more time at the bottom of a tank when first introduced and then gradually builds up the courage to poke around at the top as it begins to feel safe. Fish experiencing higher therefore spend more time on the bottom and venture upwards at a slower rate than "normal" fish. The novel_tank_dive.py script takes an XY output from a single-fish NTD video recorded side-on such that the Y value reflects fish depth in the tank. My thesis experiements considered a 5-minutes test duration, so I chopped up each video into five 1-minute segments based on the recording frame rate used at the time of filming. Feel free to adapt the base script to your own needs.
 
-If everything went well, we should be able to perform the following test.
+### shoal_analysis.py
 
-  ```python
-  import MeCab
-  m=MeCab.Tagger("-Ochasen")
-  text = "私は機械学習が好きです。"
-  text_segmented = m.parse(text)
-  print(text_segmented)
-  ```
-MeCab will then do its job and segment the text we provided. Additionally, MeCab identifies each segment into its katakana pronounciation and grammatical class. Handy!
-         
-<pre>
-私        ワタシ      私        名詞-代名詞-一般  
-は        ハ         は        助詞-係助詞                         
-機械      キカイ      機械      名詞-一般                       
-学習      ガクシュウ   学習      名詞-サ変接続                 
-が        ガ         が        助詞-格助詞-一般                    
-好き      スキ        好き      名詞-形容動詞語幹                
-です      デス        です      助動詞  
-。         。         。       記号-句点                           
-</pre>
-
-You can also replace the "-Ochasen" Tagger with "-Owakati" and "-Oyomi" for different text breakdown formats.
-
-### generate_ppx.py
-
-> This is the main project script. Open the .py file for helpful tips and enlightening comments. More importantly, our proposed perplexity model is coded as a FOR loop in this script.
-
-```sh
-# This will generate a ppx value for each N3 adverb question response. 
-# The questions are taken from N3_adverbs.csv under the "text" column.
-
-./generate_ppx.py
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-## Content
-
-- [ ] Shoal Analysis
-- [ ] Novel Tank Dive Analysis
-- [ ] Trajectory Analysis
+I also worked a lot with zebrafish larvae. 5 days after fertilization, zebrafish have hatched from their egg and are capable of twitchy swim bursts when agitated. 5-day-old zebrafish also display shoaling --- the tendency to swim in close proximity to one another. The shoal_analysis.py script takes a 2-column table of paired data containing the X pixel position in the first column and Y pixel position in the second column. This data is obtained from static images of petri dishes housing larval zebrafish. The images were processed using ImageJ to make an XY coordinate list of each fish. While the image processing step is time-consuming and could be automated, I chose to do it the slow but reliable way. Still, this script saves time by automating the calculation of inter-fish distance for each individual with respect to every other individual present. Then, the arithmetic mean of all the unique inter-fish euclidean distances is calculated to generate a single "shoal cohesion" value. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
