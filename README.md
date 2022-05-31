@@ -8,7 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    My colleagues and I aim to provide a transparent set of free-to-use tools for zebrafish behavior analysis. Similar commercially available software suites are restrictive, secretive, outdated, and unreasonably priced for the features offered. 
+    This is my first coding project, and is little more than a collection of Python scripts I wrote during my biology M.Sc. thesis at National Taiwan Normal University. It's not sophisticated, but the sentimental value is through the roof!
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
