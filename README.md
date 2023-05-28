@@ -52,9 +52,16 @@ Alternatively, you can also clone the repo directly using the following commands
 Open-source tracking solutions didn't have readily-available trajectory image generators when I was doing my masters, so I made my own. Whatever tracking solution you use should spit out a video frame-wise XY coordinate table, which 2D_trajectory.py converts into a linear path the object (zebrafish) moved (swam). The input file assumes only two columns, with the first column representing X position and the second column representing Y position (often in pixel units). It's rudimentary, and perhaps my colleague Connor and I will fancy it up later. For now, I hope this script gives you ideas for writing your own trajectory mappper.
 
   ```sh
-  # example description
-  example code
-  example code
+# Usage example
+import 2D_trajectory as tj
+file_path = 'path_data.csv'
+data = tj.load_csv(file_path)
+tj.trace_and_plot_path(data)
+length = tj.calculate_path_length(data)
+print("Cumulative length of the path:", length)
+
+# save the trajectory image
+plt.savefig(file_path+'XY_trajectory.tif')
   ```
 
 ### novel_tank_dive.py
@@ -63,9 +70,24 @@ The Novel Tank Dive (NTD) is a standard zebrafish anxiety experiment. Ideally, t
 
 
   ```sh
-  # example description
-  example code
-  example code
+# Usage example
+import novel_tank_dive as ntd
+file_path = 'path_data.csv'
+data = ntd.load_csv(file_path)
+zone_1_time, zone_2_time, zone_3_time = ntd.calculate_path_zones(data)
+
+print("Time spent in Zone 1:", zone_1_time)
+print("Time spent in Zone 2:", zone_2_time)
+print("Time spent in Zone 3:", zone_3_time)
+
+zone_transitions = ntd.calculate_zone_transitions(data)
+
+print("Transitions from Zone 1 to Zone 2:", zone_transitions['zone1_to_zone2'])
+print("Transitions from Zone 2 to Zone 1:", zone_transitions['zone2_to_zone1'])
+print("Transitions from Zone 2 to Zone 3:", zone_transitions['zone2_to_zone3'])
+print("Transitions from Zone 3 to Zone 2:", zone_transitions['zone3_to_zone2'])
+print("Transitions from Zone 3 to Zone 1:", zone_transitions['zone3_to_zone1'])
+print("Transitions from Zone 1 to Zone 3:", zone_transitions['zone1_to_zone3'])
   ```
 
 ### shoal_analysis.py
@@ -74,9 +96,8 @@ I also worked a lot with zebrafish larvae. 5 days after fertilization, zebrafish
 
 
   ```sh
-  # example description
-  example code
-  example code
+import shoal_analysis as sa
+
   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
