@@ -8,8 +8,8 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    Our lab's license for the Smart2.0 Zebrafish tracking software suite produced by the company PANLAB had long expired and I got tired of scheduling time with the senior students to use the one cracked version we had running off a USB.
-    This is my first coding project, and is little more than a collection of Python scripts I wrote during my biology M.Sc. thesis at National Taiwan Normal University. It's not sophisticated, but the sentimental value is through the roof!
+    My former lab's license for the Smart2.0 Zebrafish tracking software suite produced by the company PANLAB had long expired and I got tired of scheduling time with the senior students to use the one cracked version we had running off a USB.
+    This is my first coding project, and is little more than a collection of Python scripts I wrote during my master's project. It's not sophisticated, but the sentimental value is through the roof!
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -24,9 +24,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About this Project
 
-Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I found conventional behavioral analysis tools lacking. To address this issue, I began writing simple scripts that interpret raw XY-coordinate output from excellent, open-source animal tracking projects such as [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai) and [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut). As my labmates and I learned more about Python programming, our modules became more ambitious. Though still in its infancy, we hope OpenDanio inspires you to contribute to our project, incorporate our tools, and take full control of your own data processing workflow! 
-
-It's your data. You should decide what the computer does with it.
+Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I found conventional behavioral analysis tools lacking. To address this issue, I began writing simple scripts that interpret raw XY-coordinate output from excellent, open-source animal tracking projects such as [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai) and [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut). As my labmates and I learned more about Python programming, our modules became more ambitious. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
