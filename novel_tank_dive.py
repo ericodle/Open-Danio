@@ -136,22 +136,3 @@ def calculate_zone_transitions(data):
         prev_zone = curr_zone
 
     return transitions
-
-
-# Usage example
-file_path = 'path_data.csv'
-data = load_csv(file_path)
-zone_1_time, zone_2_time, zone_3_time = calculate_path_zones(data)
-
-print("Time spent in Zone 1:", zone_1_time)
-print("Time spent in Zone 2:", zone_2_time)
-print("Time spent in Zone 3:", zone_3_time)
-
-zone_transitions = calculate_zone_transitions(data)
-
-print("Transitions from Zone 1 to Zone 2:", zone_transitions['zone1_to_zone2'])
-print("Transitions from Zone 2 to Zone 1:", zone_transitions['zone2_to_zone1'])
-print("Transitions from Zone 2 to Zone 3:", zone_transitions['zone2_to_zone3'])
-print("Transitions from Zone 3 to Zone 2:", zone_transitions['zone3_to_zone2'])
-print("Transitions from Zone 3 to Zone 1:", zone_transitions['zone3_to_zone1'])
-print("Transitions from Zone 1 to Zone 3:", zone_transitions['zone1_to_zone3'])
