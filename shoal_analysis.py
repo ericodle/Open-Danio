@@ -7,45 +7,47 @@ def calculate_distance(point1, point2):
     x2, y2 = point2
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
-# Load the image
-image = cv2.imread('image.jpg')
+def detect_dots(image_path):
+    image = cv2.imread(image_path)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    _, binary = cv2.threshold(gray, 1, 255, cv2.THRESH_BINARY)
+    contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    dot_positions = []
+    for contour in contours:
+        M = cv2.moments(contour)
+        if M["m00"] != 0:
+            x = int(M["m10"] / M["m00"])
+            y = int(M["m01"] / M["m00"])
+            dot_positions.append((x, y))
+    return dot_positions
 
-# Convert the image to grayscale
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+def calculate_pairwise_distances(dot_positions):
+    num_dots = len(dot_positions)
+    distances = np.zeros((num_dots, num_dots))
+    for i in range(num_dots):
+        for j in range(i + 1, num_dots):
+            distance = calculate_distance(dot_positions[i], dot_positions[j])
+            distances[i, j] = distance
+            distances[j, i] = distance
+    return distances
 
-# Apply thresholding to get binary image
-_, binary = cv2.threshold(gray, 1, 255, cv2.THRESH_BINARY)
+def calculate_average_pairwise_distance(distances):
+    num_dots = distances.shape[0]
+    total_distance = np.sum(distances)
+    average_distance = total_distance / (num_dots * (num_dots - 1) / 2)
+    return average_distance
 
-# Find contours of black dots
-contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+def main():
+    image_path = 'image.jpg'
+    dot_positions = detect_dots(image_path)
+    distances = calculate_pairwise_distances(dot_positions)
+    average_distance = calculate_average_pairwise_distance(distances)
+    print("Average Pairwise Distance:", average_distance)
+    image = cv2.imread(image_path)
+    cv2.drawContours(image, [np.array(dot_positions)], -1, (0, 255, 0), 2)
+    cv2.imshow('Detected Dots', image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
-# Identify the XY pixel positions of the dots
-dot_positions = []
-for contour in contours:
-    M = cv2.moments(contour)
-    if M["m00"] != 0:
-        x = int(M["m10"] / M["m00"])
-        y = int(M["m01"] / M["m00"])
-        dot_positions.append((x, y))
-
-# Calculate distances between each pair of points
-num_dots = len(dot_positions)
-distances = np.zeros((num_dots, num_dots))
-for i in range(num_dots):
-    for j in range(i + 1, num_dots):
-        distance = calculate_distance(dot_positions[i], dot_positions[j])
-        distances[i, j] = distance
-        distances[j, i] = distance
-
-# Calculate the average pairwise distance
-total_distance = np.sum(distances)
-average_distance = total_distance / (num_dots * (num_dots - 1) / 2)
-
-# Print the average pairwise distance
-print("Average Pairwise Distance:", average_distance)
-
-# Display the image with detected dots
-cv2.drawContours(image, contours, -1, (0, 255, 0), 2)
-cv2.imshow('Detected Dots', image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+if __name__ == '__main__':
+    main()
