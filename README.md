@@ -97,7 +97,11 @@ I also worked a lot with zebrafish larvae. 5 days after fertilization, zebrafish
 
   ```sh
 import shoal_analysis as sa
-
+dot_positions = sa.detect_dots('image.jpg')
+distances = sa.calculate_pairwise_distances(dot_positions)
+average_distance = sa.calculate_average_pairwise_distance(distances)
+print("Average Pairwise Distance:", average_distance)
+sa.main()
   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
