@@ -57,14 +57,3 @@ def calculate_path_length(data):
         prev_y = curr_y
 
     return cumulative_length
-
-
-# Usage example
-file_path = 'path_data.csv'
-data = load_csv(file_path)
-trace_and_plot_path(data)
-length = calculate_path_length(data)
-print("Cumulative length of the path:", length)
-
-# save the trajectory image
-plt.savefig(file_path+'XY_trajectory.tif')
