@@ -8,8 +8,8 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    My former lab's license for the Smart2.0 Zebrafish tracking software suite produced by the company PANLAB had long expired and I got tired of scheduling time with the senior students to use the one cracked version we had running off a USB.
-    This is my first coding project, and is little more than a collection of Python scripts I wrote during my master's project. It's not sophisticated, but the sentimental value is through the roof!
+    My former lab's license for Smart2.0 Zebrafish tracking software had expired, but I still had to graduate.
+    This is my first coding project. Hope it helps you.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -51,13 +51,33 @@ Alternatively, you can also clone the repo directly using the following commands
 
 Open-source tracking solutions didn't have readily-available trajectory image generators when I was doing my masters, so I made my own. Whatever tracking solution you use should spit out a video frame-wise XY coordinate table, which 2D_trajectory.py converts into a linear path the object (zebrafish) moved (swam). The input file assumes only two columns, with the first column representing X position and the second column representing Y position (often in pixel units). It's rudimentary, and perhaps my colleague Connor and I will fancy it up later. For now, I hope this script gives you ideas for writing your own trajectory mappper.
 
+  ```sh
+  # example description
+  example code
+  example code
+  ```
+
 ### novel_tank_dive.py
 
 The Novel Tank Dive (NTD) is a standard zebrafish anxiety experiment. Ideally, the zebrafish spends more time at the bottom of a tank when first introduced and then gradually builds up the courage to poke around at the top as it begins to feel safe. Fish experiencing higher therefore spend more time on the bottom and venture upwards at a slower rate than "normal" fish. The novel_tank_dive.py script takes an XY output from a single-fish NTD video recorded side-on such that the Y value reflects fish depth in the tank. My thesis experiements considered a 5-minutes test duration, so I chopped up each video into five 1-minute segments based on the recording frame rate used at the time of filming. Feel free to adapt the base script to your own needs.
 
+
+  ```sh
+  # example description
+  example code
+  example code
+  ```
+
 ### shoal_analysis.py
 
 I also worked a lot with zebrafish larvae. 5 days after fertilization, zebrafish have hatched from their egg and are capable of twitchy swim bursts when agitated. 5-day-old zebrafish also display shoaling --- the tendency to swim in close proximity to one another. The shoal_analysis.py script takes a 2-column table of paired data containing the X pixel position in the first column and Y pixel position in the second column. This data is obtained from static images of petri dishes housing larval zebrafish. The images were processed using ImageJ to make an XY coordinate list of each fish. While the image processing step is time-consuming and could be automated, I chose to do it the slow but reliable way. Still, this script saves time by automating the calculation of inter-fish distance for each individual with respect to every other individual present. Then, the arithmetic mean of all the unique inter-fish euclidean distances is calculated to generate a single "shoal cohesion" value. 
+
+
+  ```sh
+  # example description
+  example code
+  example code
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
