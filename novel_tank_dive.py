@@ -3,7 +3,7 @@ import src.plotting
 
 def novel_tank_dive():
 
-    csv_file_path = 'your_data.csv'
+    csv_file_path = input("Enter the path to the data: ")
     data = load_csv(csv_file_path)
     path_length = calculate_path_length(data)
     print("Path Length:", path_length)
