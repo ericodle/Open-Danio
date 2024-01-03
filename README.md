@@ -8,7 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    My former lab's license for Smart2.0 Zebrafish tracking software had expired, but I still had to graduate.
+    My former lab's license for the Smart2.0 tracking software had expired, but I still needed to graduate.
     This is my first coding project. Hope it helps you.
     <br />
     <br />
