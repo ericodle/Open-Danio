@@ -1,3 +1,6 @@
+import src.functions
+import src.plotting
+
 def novel_tank_dive():
 
     csv_file_path = 'your_data.csv'
