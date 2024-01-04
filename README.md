@@ -122,17 +122,17 @@ As of January 2024, users can access the full paper by following this link: [Eva
 
 If my amateur masters thesis is somehow beneficial to your work, kindly use the following citation:
 
-```sh
+
 @masterthesis{odleFMR1,
-    title        = {Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software},
-    author       = {Eric Odle},
-    year         = 2021,
-    month        = {June},
-    address      = {Taipei, Taiwan},
-    school       = {National Taiwan Normal University},
-    type         = {Master's thesis}
+  *     title        = {Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software},
+  *     author       = {Eric Odle},
+  *     year         = 2021,
+  *     month        = {June},
+  *     address      = {Taipei, Taiwan},
+  *     school       = {National Taiwan Normal University},
+  *     type         = {Master's thesis}
 }
-```
+
 
 <!-- LICENSE -->
 ## License
