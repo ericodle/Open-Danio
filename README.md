@@ -110,6 +110,12 @@ to
 (opendanio) user@user:~/Open-Danio$
 ```
 
+Now we're really in.
+
+```
+(⌐■_■)
+```
+
 ### Step 3:
 pip install -r requirements.txt
 
