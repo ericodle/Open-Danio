@@ -22,7 +22,7 @@
 
 ## About this Project
 
-Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I began writing simple scripts that interpret raw XY-coordinate output from [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai).
+*Danio rerio*, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I began writing simple scripts that interpret raw XY-coordinate output from [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
