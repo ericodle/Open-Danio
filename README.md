@@ -139,16 +139,17 @@ cd
 
 ### 2D_trajectory_analysis.py
 
-This Python script analyzes 2D trajectories of objects recorded in a CSV file. 
+2D_trajectory_analysis.py Python script analyzes 2D trajectories of objects recorded in a CSV file. 
 It calculates cumulative path lengths and plots the trajectories in physical units (centimeters). 
 The script is designed to work with position data extrapolated from digital video.
 
 ```sh
 python3 src/2d_trajectory_analysis.py
 ```
+
 The script will prompt you to enter position data for analysis.
 Use the provided synthetic data, or provide your own in a similar format.
-The script also requests a pixel-to-centimeter conversion factor.
+A pixels-per-centimeter conversion factor is also requested.
 
 ```
 Enter the path to the CSV file for analysis: tests/2d_trajectory/synthetic_tracking_data_2d.csv
@@ -167,19 +168,31 @@ Object 3: Cumulative Path Length = 471.53 centimeters
 
 ### 3D_trajectory_analysis.py
 
-This script does xyz.
+3D_trajectory_analysis.py is a script for analyzing and plotting 3D object trajectories. 
+Similar to the previous script, this one calculates cumulative path lengths for each object in 3D space and plots the trajectories in physical units (centimeters).
 
-  ```sh
-how to start it up
+```sh
+python3 src/3d_trajectory_analysis.py
+```
+
+The script will prompt you to enter position data for analysis.
+Use the provided synthetic data, or provide your own in a similar format.
+A pixels-per-centimeter conversion factor is also requested.
+
+```
+Enter the path to the CSV file for analysis: tests/3d_trajectory/synthetic_tracking_data_3d.csv            
+Enter the pixels per centimeter conversion factor: 10
   ```
+Output:
 
-Then this will happen.
-
-  ```sh
-what to do next.
+```
+Object 1: Cumulative Path Length = 471.96 centimeters
+Object 2: Cumulative Path Length = 516.45 centimeters
+Object 3: Cumulative Path Length = 517.17 centimeters
   ```
-
-And this is the output.
+<p align="center">
+  <img src="tests/3d_trajectory/3d_trajectories.png" width="350" title="logo">
+</p>
 
 ### novel_tank_dive.py
 
