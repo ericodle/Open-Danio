@@ -115,7 +115,22 @@ average_distance = sa.calculate_average_pairwise_distance(distances)
 print("Average Pairwise Distance:", average_distance)
 sa.main()
   ```
-## Citation
+## Citing this project
+
+
+As of January 2024, users can access the full paper by following this link: [Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwii7qGgzMKDAxVNmK8BHXF2D7sQFnoECAsQAQ&url=http%3A%2F%2Frportal.lib.ntnu.edu.tw%2Fbitstreams%2F2534e275-1fa0-44c6-883a-7024325cdcb1%2Fdownload&usg=AOvVaw0MRYBsjjBFlv8bwUM1aeuR&opi=89978449).
+
+If my amateur masters thesis is somehow beneficial to your work, kindly use the following citation:
+
+@masterthesis{odleFMR1,
+    title        = {Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software},
+    author       = {Eric Odle},
+    year         = 2021,
+    month        = {June},
+    address      = {Taipei, Taiwan},
+    school       = {National Taiwan Normal University},
+    type         = {Master's thesis}
+}
 
 
 <!-- LICENSE -->
