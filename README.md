@@ -31,90 +31,85 @@ Danio rerio, also known as the zebrafish, is a common model organism for its cle
 
 Here is my recommended way to use this GitHub repository.
 
-Step 1: Clone the repository
+###Step 1: Clone the repository
+
+Option 1 -- clone by terminal command
 
   ```sh
-  # Replace "your_folderpath_here" with the actual folder where you want the project to go.
-  cd /your_folderpath_here
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
-Step 2:
+Option 2 -- clone by clicking
 
-Step 3:
+###Step 2: Change working directory into the project folder
 
-Step 4:
+  ```sh
+  cd path/of/project/directory
+  ```
 
-Step 5:
+###Step 3:
+do venv
+
+###Step 3:
+pip install -r requirements.txt
+
+###Step 4:
+
+###Step 5:
 
 > __For this example, the working directory is the repository root directory.__ 
 
 ## Using the Open-Danio tools
 
-### 2D_trajectory.py
+### 2D_trajectory_analysis.py
 
 This script does xyz.
 
   ```sh
-# Usage example
-import 2D_trajectory as tj
-file_path = 'path_data.csv'
-data = tj.load_csv(file_path)
-tj.trace_and_plot_path(data)
-length = tj.calculate_path_length(data)
-print("Cumulative length of the path:", length)
-
-# save the trajectory image
-plt.savefig(file_path+'XY_trajectory.tif')
+how to start it up
   ```
 
+Then this will happen.
 
-### 3D_trajectory.py
+  ```sh
+what to do next.
+  ```
+
+And this is the output.
+
+### 3D_trajectory_analysis.py
 
 This script does xyz.
 
   ```sh
-# Usage example
-import 2D_trajectory as tj
-file_path = 'path_data.csv'
-data = tj.load_csv(file_path)
-tj.trace_and_plot_path(data)
-length = tj.calculate_path_length(data)
-print("Cumulative length of the path:", length)
-
-# save the trajectory image
-plt.savefig(file_path+'XY_trajectory.tif')
+how to start it up
   ```
+
+Then this will happen.
+
+  ```sh
+what to do next.
+  ```
+
+And this is the output.
 
 ### novel_tank_dive.py
 
 This script does xyz.
 
   ```sh
-# Usage example
-import 2D_trajectory as tj
-file_path = 'path_data.csv'
-data = tj.load_csv(file_path)
-tj.trace_and_plot_path(data)
-length = tj.calculate_path_length(data)
-print("Cumulative length of the path:", length)
+how to start it up
+  ```
 
-# save the trajectory image
-plt.savefig(file_path+'XY_trajectory.tif')
-
-### shoal_analysis.py
-
-I also worked a lot with zebrafish larvae. 5 days after fertilization, zebrafish have hatched from their egg and are capable of twitchy swim bursts when agitated. 5-day-old zebrafish also display shoaling --- the tendency to swim in close proximity to one another. The shoal_analysis.py script takes a 2-column table of paired data containing the X pixel position in the first column and Y pixel position in the second column. This data is obtained from static images of petri dishes housing larval zebrafish. The images were processed using ImageJ to make an XY coordinate list of each fish. While the image processing step is time-consuming and could be automated, I chose to do it the slow but reliable way. Still, this script saves time by automating the calculation of inter-fish distance for each individual with respect to every other individual present. Then, the arithmetic mean of all the unique inter-fish euclidean distances is calculated to generate a single "shoal cohesion" value. 
-
+Then this will happen.
 
   ```sh
-import shoal_analysis as sa
-dot_positions = sa.detect_dots('image.jpg')
-distances = sa.calculate_pairwise_distances(dot_positions)
-average_distance = sa.calculate_average_pairwise_distance(distances)
-print("Average Pairwise Distance:", average_distance)
-sa.main()
+what to do next.
   ```
+
+And this is the output.
+
+
 ## Citing this project
 
 
