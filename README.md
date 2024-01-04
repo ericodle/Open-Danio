@@ -64,7 +64,10 @@ Good, we're in.
 ```
 
 ### Step 3: Create a virtual environment:
+Differences between software versions can break your programs and waste your time. 
+Therefore, we use a **virtual environment** to ensure software versions on our computers match the versions used by developers when making an open-source project like Open-Danio.
 
+```
 python3 -m venv venv
 
 ### Step 3:
