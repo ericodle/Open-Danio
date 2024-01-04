@@ -67,11 +67,8 @@ to:
 user@user:~/Open-Danio$
 ```
 
-Good, we're in.
+Good, we're in. (⌐■_■)
 
-```
-(⌐■_■)
-```
 
 ### Step 3: Create a virtual environment:
 Differences between software versions can break your programs and waste your time. 
@@ -110,11 +107,8 @@ to
 (opendanio) user@user:~/Open-Danio$
 ```
 
-Now we're really in.
+Now we're really in. (⌐■_■)
 
-```
-(⌐■_■)
-```
 
 ### Step 3: Install requirements.txt
 
