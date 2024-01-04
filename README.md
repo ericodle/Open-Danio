@@ -58,13 +58,13 @@ Therefore, I entered the command:
 If performed correctly, your command line interface should change from:
 
 ```
-(base) user@user:~$
+user@user:~$
 ```
 
 to:
 
 ```
-(base) user@user:~/Open-Danio$
+user@user:~/Open-Danio$
 ```
 
 Good, we're in.
@@ -90,12 +90,25 @@ python3 -m venv opendanio
 ```
 
 The virtual environment has been created. 
-We enter the environment to do our work by using the following command
+We enter the environment to do our work by using the following command:
 
 ```
 source opendanio/bin/activate
 ```
+
 If you named your virtual environment something else, enter the name you chose in place of "opendanio".
+
+If performed correctly, your command line interface prompt should change from something resembling 
+
+```
+user@user:~/Open-Danio$
+```
+
+to 
+
+```
+(opendanio) user@user:~/Open-Danio$
+```
 
 ### Step 3:
 pip install -r requirements.txt
