@@ -116,10 +116,17 @@ Now we're really in.
 (⌐■_■)
 ```
 
-### Step 3:
-pip install -r requirements.txt
+### Step 3: Install requirements.txt
 
-### Step 4:
+Run the following command to install specific software versions to your virtual environment.
+
+  ```sh
+pip install -r requirements.txt
+  ```
+
+### Step 4: Use Open-Danio
+
+This is a simple project containing only three main tools. Those tools are 2D_trajectory_analysis.py, 3D_trajectory_analysis.py, and novel_tank_dive.py, organized in the "src" (source) folder.
 
 ### Step 5: Deactivate the virtual environment
 
