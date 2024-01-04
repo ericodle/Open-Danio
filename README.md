@@ -78,21 +78,21 @@ Differences between software versions can break your programs and waste your tim
 Therefore, we use a **virtual environment** to ensure software versions on our computer match the versions used by developers when making an open-source project like Open-Danio.
 
 
-```
+```sh
 python3 -m venv environment-name
 ```
 
 Your "environment-name" can be anything you want. 
 For simplicity, let's call it opendanio (one word, all lowercase).
 
-```
+```sh
 python3 -m venv opendanio
 ```
 
 The virtual environment has been created. 
 We enter the environment to do our work by using the following command:
 
-```
+```sh
 source opendanio/bin/activate
 ```
 
@@ -125,9 +125,12 @@ pip install -r requirements.txt
 
 When finished working, it is best to deactivate the virtual environment and cd out of the project directory.
 
-> There are two ways to do this
+  ```sh
+deactivate
+cd
+  ```
 
-> __For this example, the working directory is the repository root directory.__ 
+...or you can just close the command line interface window.
 
 ## Using the Open-Danio tools
 
