@@ -17,6 +17,11 @@ Now I use this repository to demonstrate basic Github management skills and stor
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Prerequisites
+
+Install [Python3](https://www.python.org/downloads/) on your computer.
+
+
 ## Setup
 
 Here is an easy way to use this GitHub repository.
@@ -67,8 +72,10 @@ Good, we're in.
 Differences between software versions can break your programs and waste your time. 
 Therefore, we use a **virtual environment** to ensure software versions on our computer match the versions used by developers when making an open-source project like Open-Danio.
 
+
 ```
-python3 -m venv venv
+python3 -m venv myenv
+```
 
 ### Step 3:
 pip install -r requirements.txt
