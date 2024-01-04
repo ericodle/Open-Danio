@@ -124,13 +124,13 @@ If my amateur masters thesis is somehow beneficial to your work, kindly use the 
 
 
 @masterthesis{odleFMR1,<br/>
-  title        = {Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software},<br/>
+  <p>title        = {Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software},<br/>
   author       = {Eric Odle},<br/>
   year         = 2021,<br/>
   month        = {June},<br/>
   address      = {Taipei, Taiwan},<br/>
   school       = {National Taiwan Normal University},<br/>
-  type         = {Master's thesis}<br/>
+  type         = {Master's thesis}<br/><p/>
 }
 
 
