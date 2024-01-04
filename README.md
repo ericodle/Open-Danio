@@ -130,7 +130,7 @@ If my amateur masters thesis is somehow beneficial to your work, kindly use the 
   month        = {June},<br/>
   address      = {Taipei, Taiwan},<br/>
   school       = {National Taiwan Normal University},<br/>
-  type         = {Master's thesis}<br/><p/>
+  type         = {Master's thesis}<br/></p>
 }
 
 
