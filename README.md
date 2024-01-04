@@ -62,10 +62,11 @@ to:
 ```
 
 Congratulations, we're in.
-(•_•)
+```
+(•_•) 
 ( •_•)>⌐■-■
 (⌐■_■)
-
+```
 ### Step 3: Create a virtual environment:
 
 python3 -m venv venv
