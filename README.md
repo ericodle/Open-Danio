@@ -1,4 +1,5 @@
-<!-- PROJECT LOGO -->
+
+![External Image]("https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" width="400" height="400")
 <div align="center">
 
     <img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" width="400" height="400">
