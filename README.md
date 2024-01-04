@@ -8,7 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    *Danio rerio*, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants.
+    _Danio rerio_, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
