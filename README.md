@@ -9,7 +9,7 @@ Zebrafish (*Danio rerio*) are a common model organism for their transparent larv
 
 
 
-## About this Project
+## About this project
  
 While working on my master's thesis in Taiwan, I began playing around with Python.
 
