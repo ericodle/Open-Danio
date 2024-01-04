@@ -61,8 +61,11 @@ to:
 (base) user@user:~/Open-Danio$
 ```
 
-Congratulations, we're in.
+Good, we're in.
+
+```
 (⌐■_■)
+```
 
 ### Step 3: Create a virtual environment:
 
