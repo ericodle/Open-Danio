@@ -29,7 +29,7 @@ While working with zebrafish for my master's project, I began writing simple scr
 
 ## Setup
 
-Here is my recommended way to use this GitHub repository.
+Here is the recommended way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
@@ -38,10 +38,16 @@ Open your computer's command line interface (terminal, control panel, etc.) and 
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
-### Step 2: Change working directory into the project folder
+### Step 2: Navigate to the project directory
 
   ```sh
-  cd path/of/project/directory
+  cd /path/of/project/directory
+  ```
+For example, the path was /home/ericodle/Open-Danio on my computer.
+Therefore, I entered the command:
+
+  ```sh
+  cd /home/ericodle/Open-Danio
   ```
 
 ### Step 3:
