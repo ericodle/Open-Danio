@@ -32,7 +32,7 @@ Here is my recommended way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
-Open up a command line interface (terminal, control panel, etc.) and run this command.
+Open your coputer's command line interface (terminal, control panel, etc.) and run this command.
   ```sh
   git clone git@github.com:ericodle/Open-Danio.git
   ```
@@ -107,6 +107,8 @@ And this is the output.
 
 
 ## Testing
+
+Testing was performed on an Intel Xeon W-2235 CPU 3.80GHz system with 31.0 GiB of available memory running Linux kernel 5.15.0-87.
 
 explain the synthetic data scripts, and toss up the output images.
 
