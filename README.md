@@ -33,7 +33,7 @@ Here is my recommended way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
-Open your coputer's command line interface (terminal, control panel, etc.) and run this command.
+Open your computer's command line interface (terminal, control panel, etc.) and run this command.
   ```sh
   git clone git@github.com:ericodle/Open-Danio.git
   ```
