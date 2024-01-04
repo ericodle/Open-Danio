@@ -5,8 +5,7 @@
   </a>
 </div>
 
-<align="center">
-Zebrafish (**Danio rerio**) are a common model organism for their transparent larval stage, high fecundity, and large library of mutants.
+Zebrafish (*Danio rerio*) are a common model organism for their transparent larval stage, high fecundity, and large library of mutants.
 
 
 
