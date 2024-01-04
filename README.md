@@ -29,7 +29,7 @@ Open your computer's command line interface (terminal, control panel, etc.) and 
   ```
 
 You have now downloaded the entire project, including all its sub-folders and files.
-(We will avoid using Git this time.)
+(We will avoid using Git commands.)
 
 ### Step 2: Navigate to the project directory
 Find where your computer saved the project. On Linux, it will go to the Home folder by default.
