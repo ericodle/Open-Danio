@@ -79,8 +79,23 @@ Therefore, we use a **virtual environment** to ensure software versions on our c
 
 
 ```
-python3 -m venv myenv
+python3 -m venv environment-name
 ```
+
+Your "environment-name" can be anything you want. 
+For simplicity, let's call it opendanio (one word, all lowercase).
+
+```
+python3 -m venv opendanio
+```
+
+The virtual environment has been created. 
+We enter the environment to do our work by using the following command
+
+```
+source opendanio/bin/activate
+```
+If you named your virtual environment something else, enter the name you chose in place of "opendanio".
 
 ### Step 3:
 pip install -r requirements.txt
