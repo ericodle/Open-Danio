@@ -8,8 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    My former lab's license for the Smart2.0 tracking software had expired, but I still needed to graduate.
-    This is my first coding project. Hope it helps you.
+    My first computer programming project.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -24,20 +23,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About this Project
 
-Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I found conventional behavioral analysis tools lacking. To address this issue, I began writing simple scripts that interpret raw XY-coordinate output from excellent, open-source animal tracking projects such as [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai) and [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut). As my labmates and I learned more about Python programming, our modules became more ambitious. 
+Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I began writing simple scripts that interpret raw XY-coordinate output from [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-### Prerequisites
-
-Open Danio gives researchers a way to interpret the framewise XY corrdinates generated from animal tracking tools. Therefore, users have to provide their own animals, video files, and tracking output data. As previously stated, we recommend using either DeepLabCut or IdTrackerAI, depending on your available hardware and research requirements. For example, DeepLabCut is excellent at pose estimation, but in our experience, requires a strong GPU and a lot of time to train. Moreover, DeepLabCut has been better for our single-animal tracking experiments, whereas IdTrackerAI is great for simultaneous multi-animal tracking in the same region of interest. This is because IdTrackerAI was specifically designed to keep track of animal identity in a group, which becomes a non-trivial challenge when you record multiple crossing zebrafish from a top-down angle.
-
 ## Getting Started
 
-Download this repository by going up to the green "Code" button at the top right and clicking "Download ZIP". 
+Here is my recommended way to use this GitHub repository.
 
-Alternatively, you can also clone the repo directly using the following commands.
+Step 1: Clone the repository
 
   ```sh
   # Replace "your_folderpath_here" with the actual folder where you want the project to go.
@@ -45,11 +39,39 @@ Alternatively, you can also clone the repo directly using the following commands
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
+
 > __For this example, the working directory is the repository root directory.__ 
+
+## Using the Open-Danio tools
 
 ### 2D_trajectory.py
 
-Open-source tracking solutions didn't have readily-available trajectory image generators when I was doing my masters, so I made my own. Whatever tracking solution you use should spit out a video frame-wise XY coordinate table, which 2D_trajectory.py converts into a linear path the object (zebrafish) moved (swam). The input file assumes only two columns, with the first column representing X position and the second column representing Y position (often in pixel units). It's rudimentary, and perhaps my colleague Connor and I will fancy it up later. For now, I hope this script gives you ideas for writing your own trajectory mappper.
+This script does xyz.
+
+  ```sh
+# Usage example
+import 2D_trajectory as tj
+file_path = 'path_data.csv'
+data = tj.load_csv(file_path)
+tj.trace_and_plot_path(data)
+length = tj.calculate_path_length(data)
+print("Cumulative length of the path:", length)
+
+# save the trajectory image
+plt.savefig(file_path+'XY_trajectory.tif')
+  ```
+
+
+### 3D_trajectory.py
+
+This script does xyz.
 
   ```sh
 # Usage example
@@ -66,29 +88,19 @@ plt.savefig(file_path+'XY_trajectory.tif')
 
 ### novel_tank_dive.py
 
-The Novel Tank Dive (NTD) is a standard zebrafish anxiety experiment. Ideally, the zebrafish spends more time at the bottom of a tank when first introduced and then gradually builds up the courage to poke around at the top as it begins to feel safe. Fish experiencing higher therefore spend more time on the bottom and venture upwards at a slower rate than "normal" fish. The novel_tank_dive.py script takes an XY output from a single-fish NTD video recorded side-on such that the Y value reflects fish depth in the tank. My thesis experiements considered a 5-minutes test duration, so I chopped up each video into five 1-minute segments based on the recording frame rate used at the time of filming. Feel free to adapt the base script to your own needs.
-
+This script does xyz.
 
   ```sh
 # Usage example
-import novel_tank_dive as ntd
+import 2D_trajectory as tj
 file_path = 'path_data.csv'
-data = ntd.load_csv(file_path)
-zone_1_time, zone_2_time, zone_3_time = ntd.calculate_path_zones(data)
+data = tj.load_csv(file_path)
+tj.trace_and_plot_path(data)
+length = tj.calculate_path_length(data)
+print("Cumulative length of the path:", length)
 
-print("Time spent in Zone 1:", zone_1_time)
-print("Time spent in Zone 2:", zone_2_time)
-print("Time spent in Zone 3:", zone_3_time)
-
-zone_transitions = ntd.calculate_zone_transitions(data)
-
-print("Transitions from Zone 1 to Zone 2:", zone_transitions['zone1_to_zone2'])
-print("Transitions from Zone 2 to Zone 1:", zone_transitions['zone2_to_zone1'])
-print("Transitions from Zone 2 to Zone 3:", zone_transitions['zone2_to_zone3'])
-print("Transitions from Zone 3 to Zone 2:", zone_transitions['zone3_to_zone2'])
-print("Transitions from Zone 3 to Zone 1:", zone_transitions['zone3_to_zone1'])
-print("Transitions from Zone 1 to Zone 3:", zone_transitions['zone1_to_zone3'])
-  ```
+# save the trajectory image
+plt.savefig(file_path+'XY_trajectory.tif')
 
 ### shoal_analysis.py
 
@@ -103,43 +115,10 @@ average_distance = sa.calculate_average_pairwise_distance(distances)
 print("Average Pairwise Distance:", average_distance)
 sa.main()
   ```
+## Citation
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions make the open source community great. Everyone has a unique combination of skills and experience. Your input is **highly valued**.
-If you have ideas for improvement, please fork the repo and create a pull request. 
-If this is your first pull request, just follow the steps below:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the GNU Lesser General Public License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
