@@ -163,13 +163,7 @@ Object 1: Cumulative Path Length = 304.90 centimeters
 Object 2: Cumulative Path Length = 467.15 centimeters
 Object 3: Cumulative Path Length = 471.53 centimeters
   ```
-
-
-Then this will happen.
-
-  ```sh
-what to do next.
-  ```
+<img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" alt="Logo" width="400" height="400">
 
 And this is the output.
 
