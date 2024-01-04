@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" alt="Logo" width="400" height="400">
-  </a>
+
+    <img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" width="400" height="400">
+
 </div>
 
 Zebrafish (*Danio rerio*) are a common model organism for their transparent larval stage, high fecundity, and large library of mutants.
