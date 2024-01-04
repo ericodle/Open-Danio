@@ -49,10 +49,16 @@ Therefore, I entered the command:
   ```sh
   cd /home/ericodle/Open-Danio
   ```
-If performed correctly, your command line interface should change to something resembling: 
+If performed correctly, your command line interface should change from:
 
 ```
-(base )user@user:~/Open-Danio$
+(base) user@user:~$
+```
+
+to:
+
+```
+(base) user@user:~/Open-Danio$
 ```
 
 ### Step 3: Create a virtual environment:
