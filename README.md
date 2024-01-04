@@ -8,7 +8,7 @@
 <h3 align="center">Open Danio</h3>
 
   <p align="center">
-    My first computer programming project.
+    *Danio rerio*, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants.
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -21,9 +21,10 @@
 
 
 ## About this Project
+ 
+While working on my master's thesis in Taiwan, I began playing around with Python.
 
-*Danio rerio*, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. 
-While working with zebrafish for my master's project, I began writing simple scripts to interpret raw XY-coordinate outputs from open-souce object tracking software.
+Now, I use this repository to demonstrate basic open-source project skills.  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
