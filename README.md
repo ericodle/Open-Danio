@@ -49,9 +49,15 @@ Therefore, I entered the command:
   ```sh
   cd /home/ericodle/Open-Danio
   ```
+If performed correctly, your command line interface should change to something resembling: 
 
-### Step 3:
-do venv
+```
+(base )user@user:~/Open-Danio$
+```
+
+### Step 3: Create a virtual environment:
+
+python3 -m venv venv
 
 ### Step 3:
 pip install -r requirements.txt
