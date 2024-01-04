@@ -108,7 +108,7 @@ And this is the output.
 
 ## Testing
 
-Testing was most recently performed on an Intel-based system running Linux kernel 5.15.0-87.
+Testing was most recently performed on an Intel-based system running Linux kernel 5.15.0-87. 
 
 explain the synthetic data scripts, and toss up the output images.
 
