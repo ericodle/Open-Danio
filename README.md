@@ -19,7 +19,7 @@ Now I use this repository to demonstrate basic Github management skills and stor
 
 Install [Python3](https://www.python.org/downloads/) on your computer.
 
-If you have Python installed but you don't know the version, enter this into your computer's command line interface (terminal, control panel, etc.):
+Enter this into your computer's command line interface (terminal, control panel, etc.) to check the version:
 
   ```sh
   python --version
