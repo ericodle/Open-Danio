@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://github.com/ericodle/Open-Danio/blob/main/misc/opendanio_logo.jpeg" alt="Logo" width="400" height="400">
+    <img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" alt="Logo" width="400" height="400">
   </a>
 
 <h3 align="center">Open Danio</h3>
