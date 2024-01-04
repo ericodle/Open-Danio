@@ -15,8 +15,6 @@ While working on my master's thesis in Taiwan, I began playing around with Pytho
 
 Now I use this repository to demonstrate basic Github management skills and store bioinformatics lessons.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Prerequisites
 
 Install [Python3](https://www.python.org/downloads/) on your computer.
