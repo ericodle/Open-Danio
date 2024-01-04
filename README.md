@@ -93,9 +93,9 @@ We enter the environment to do our work by using the following command:
 source opendanio/bin/activate
 ```
 
-If you named your virtual environment something else, enter the name you chose in place of "opendanio".
+Enter your preferred name in place of "opendanio", if desired.
 
-If performed correctly, your command line interface prompt should change from something resembling 
+When performed correctly, your command line interface prompt should change from something resembling 
 
 ```
 user@user:~/Open-Danio$
