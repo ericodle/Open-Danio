@@ -13,13 +13,13 @@ Zebrafish (*Danio rerio*) are a common model organism for their transparent larv
  
 While working on my master's thesis in Taiwan, I began playing around with Python.
 
-Now, I use this repository to demonstrate basic Github management skills and store bioinformatics lessons.
+Now I use this repository to demonstrate basic Github management skills and store bioinformatics lessons.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Setup
 
-Here is the recommended way to use this GitHub repository.
+Here is an easy way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
@@ -28,11 +28,17 @@ Open your computer's command line interface (terminal, control panel, etc.) and 
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
+You have now downloaded the entire project, including all its sub-folders and files.
+(We will avoid using Git this time.)
+
 ### Step 2: Navigate to the project directory
+Find where your computer saved the project. On Linux, it will go to the Home folder by default.
+When you figure out the project path, run this command.
 
   ```sh
-  cd /path/of/project/directory
+  cd /path/to/project/directory
   ```
+
 For example, the path was /home/ericodle/Open-Danio on my computer.
 Therefore, I entered the command:
 
