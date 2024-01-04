@@ -38,11 +38,11 @@ Open the command line interface and run:
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
-You have now downloaded the entire project, including all its sub-directories and files.
+You have now downloaded the entire project, including all its sub-directories (folders) and files.
 (We will avoid using Git commands.)
 
 ### Step 2: Navigate to the project directory
-Find where your computer saved the project. On Linux, it will go to the Home directory (folder) by default.
+Find where your computer saved the project. On Linux, it will go to the Home directory by default.
 When you figure out the project path, run this command.
 
   ```sh
