@@ -32,13 +32,10 @@ Here is my recommended way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
-Option 1 -- clone by terminal command
-
+Open up a command line interface (terminal, control panel, etc.) and run this command.
   ```sh
   git clone git@github.com:ericodle/Open-Danio.git
   ```
-
-Option 2 -- clone by clicking
 
 ### Step 2: Change working directory into the project folder
 
