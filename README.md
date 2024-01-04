@@ -15,10 +15,17 @@ While working on my master's thesis in Taiwan, I began playing around with Pytho
 
 Now I use this repository to demonstrate basic Github management skills and store bioinformatics lessons.
 
-## Prerequisites
+## Prerequisite
 
 Install [Python3](https://www.python.org/downloads/) on your computer.
 
+If you have Python installed but you don't know the version, enter this into your computer's command line interface (terminal, control panel, etc.):
+
+  ```sh
+  python --version
+  ```
+
+If the first number is not a 3, update to Python3.
 
 ## Setup
 
@@ -26,7 +33,7 @@ Here is an easy way to use this GitHub repository.
 
 ### Step 1: Clone the repository
 
-Open your computer's command line interface (terminal, control panel, etc.) and run this command.
+Open the command line interface and run:
   ```sh
   git clone git@github.com:ericodle/Open-Danio.git
   ```
