@@ -161,9 +161,9 @@ Object 1: Cumulative Path Length = 304.90 centimeters
 Object 2: Cumulative Path Length = 467.15 centimeters
 Object 3: Cumulative Path Length = 471.53 centimeters
   ```
-<img src="https://github.com/ericodle/Open-Danio/blob/maintests/2d_trajectory/2d_trajectories.png" alt="2d" width="400" height="400">
-
-And this is the output.
+<p align="center">
+  <img src="tests/2d_trajectory/2d_trajectories.png" width="350" title="logo">
+</p>
 
 ### 3D_trajectory_analysis.py
 
