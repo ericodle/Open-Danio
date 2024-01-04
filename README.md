@@ -61,6 +61,8 @@ to:
 (base) user@user:~/Open-Danio$
 ```
 
+Congratulations, we're in (⌐■_■)
+
 ### Step 3: Create a virtual environment:
 
 python3 -m venv venv
