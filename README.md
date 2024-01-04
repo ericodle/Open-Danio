@@ -1,10 +1,10 @@
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
     <img src="https://github.com/ericodle/Open-Danio/blob/main/imgs/danio_logo.png" alt="Logo" width="400" height="400">
   </a>
 </div>
+
 <h3 align="center">*Danio rerio*, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants.</h3>
 
 
