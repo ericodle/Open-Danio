@@ -145,14 +145,24 @@ This Python script analyzes 2D trajectories of objects recorded in a CSV file.
 It calculates cumulative path lengths and plots the trajectories in physical units (centimeters). 
 The script is designed to work with position data extrapolated from digital video.
 
-  ```sh
+```sh
 python3 src/2d_trajectory_analysis.py
+```
+The script will prompt you to enter position data for analysis.
+Use the provided synthetic data, or provide your own in a similar format.
+
+```sh
 Enter the path to the CSV file for analysis: tests/2d_trajectory/synthetic_tracking_data_2d.csv
+  ```
+You get an output:
+
+```sh
 Enter the pixels per centimeter conversion factor: 10
 Object 1: Cumulative Path Length = 304.90 centimeters
 Object 2: Cumulative Path Length = 467.15 centimeters
 Object 3: Cumulative Path Length = 471.53 centimeters
   ```
+
 
 Then this will happen.
 
