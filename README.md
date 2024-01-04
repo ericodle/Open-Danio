@@ -123,7 +123,7 @@ pip install -r requirements.txt
 
 ### Step 5: Deactivate the virtual environment
 
-When finished working, it is best to deactivate the virtual environment and cd out of the project directory.
+When finished working, it is best to deactivate the virtual environment and change directory (cd) out of the project directory. Enter the following command:
 
   ```sh
 deactivate
