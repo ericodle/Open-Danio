@@ -20,7 +20,6 @@
 </div>
 
 
-<!-- ABOUT THE PROJECT -->
 ## About this Project
 
 Danio rerio, also known as the zebrafish, is a common model organism for its clear larval stage, high fecundity, and rich library of available mutants. While working with zebrafish for my master's project, I began writing simple scripts that interpret raw XY-coordinate output from [IdTrackerAI](https://gitlab.com/polavieja_lab/idtrackerai).
@@ -109,6 +108,10 @@ what to do next.
 
 And this is the output.
 
+
+## Testing
+
+explain the synthetic data scripts, and toss up the output images.
 
 ## Citing this project
 
