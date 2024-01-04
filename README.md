@@ -27,7 +27,7 @@ Danio rerio, also known as the zebrafish, is a common model organism for its cle
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## How to Use
+## Setup
 
 Here is my recommended way to use this GitHub repository.
 
