@@ -108,7 +108,7 @@ And this is the output.
 
 ## Testing
 
-Testing was performed on an Intel Xeon W-2235 CPU 3.80GHz system with 31.0 GiB of available memory running Linux kernel 5.15.0-87.
+Testing was performed on an Intel-based system running Linux kernel 5.15.0-87.
 
 explain the synthetic data scripts, and toss up the output images.
 
