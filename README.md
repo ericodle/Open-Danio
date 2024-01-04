@@ -149,7 +149,7 @@ python3 src/2d_trajectory_analysis.py
 
 The script will prompt you to enter position data for analysis.
 Use the provided synthetic data, or provide your own in a similar format.
-A pixels-per-centimeter conversion factor is also requested.
+A pixels-per-centimeter conversion factor is also required.
 
 ```
 Enter the path to the CSV file for analysis: tests/2d_trajectory/synthetic_tracking_data_2d.csv
@@ -177,7 +177,7 @@ python3 src/3d_trajectory_analysis.py
 
 The script will prompt you to enter position data for analysis.
 Use the provided synthetic data, or provide your own in a similar format.
-A pixels-per-centimeter conversion factor is also requested.
+A pixels-per-centimeter conversion factor is also required.
 
 ```
 Enter the path to the CSV file for analysis: tests/3d_trajectory/synthetic_tracking_data_3d.csv            
@@ -196,20 +196,35 @@ Object 3: Cumulative Path Length = 517.17 centimeters
 
 ### novel_tank_dive.py
 
-This script does xyz.
+novel_tank_dive.py is a script for analyzing object movement within different zones and recording the time spent in each zone, as well as counting zone transitions. 
+This script is useful for tracking the depth of zebrafish in a tank, which can be a measure of anxiety. 
 
-  ```sh
-how to start it up
-  ```
 
-Then this will happen.
+```sh
+python3 src/novel_tank_dive.py
+```
 
-  ```sh
-what to do next.
-  ```
+The script will prompt you to enter position data for analysis.
+Use the provided synthetic data, or provide your own in a similar format.
+A video frame rate conversion factor is also required.
 
-And this is the output.
 
+```
+Enter the path to the CSV file for analysis: tests/novel_tank_dive/synthetic_ntd_data.csv
+Enter the frames per second (default is 30): 30
+```
+
+Output:
+
+```
+Time spent in Zone 0: 213.40 seconds
+Number of transitions at Zone 0: 191
+Time spent in Zone 1: 76.70 seconds
+Number of transitions at Zone 1: 63
+Time spent in Zone 2: 33.37 seconds
+Number of transitions at Zone 2: 21
+Analysis results saved to ntd_analysis_results.csv
+```
 
 ## tests
 
