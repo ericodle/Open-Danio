@@ -38,11 +38,11 @@ Open the command line interface and run:
   git clone git@github.com:ericodle/Open-Danio.git
   ```
 
-You have now downloaded the entire project, including all its sub-folders and files.
+You have now downloaded the entire project, including all its sub-directories and files.
 (We will avoid using Git commands.)
 
 ### Step 2: Navigate to the project directory
-Find where your computer saved the project. On Linux, it will go to the Home folder by default.
+Find where your computer saved the project. On Linux, it will go to the Home directory (folder) by default.
 When you figure out the project path, run this command.
 
   ```sh
@@ -126,7 +126,11 @@ pip install -r requirements.txt
 
 ### Step 4: Use Open-Danio
 
-This is a simple project containing only three main tools. Those tools are 2D_trajectory_analysis.py, 3D_trajectory_analysis.py, and novel_tank_dive.py, organized in the "src" (source) folder.
+This is a simple project containing only three main modules: 2D_trajectory_analysis.py, 3D_trajectory_analysis.py, and novel_tank_dive.py.
+These modules are organized in the "src" (source) sub-directory.
+There are other directories as well, such as "imgs" (images), "tests", and "notebooks".
+A detailed explaation of these 
+
 
 ### Step 5: Deactivate the virtual environment
 
