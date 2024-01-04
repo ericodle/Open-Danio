@@ -143,7 +143,7 @@ cd
 
 ...or you can just close the command line interface window.
 
-## Using the Open-Danio tools
+## src
 
 ### 2D_trajectory_analysis.py
 
@@ -194,11 +194,18 @@ what to do next.
 And this is the output.
 
 
-## Testing
+## tests
 
 Testing was performed on Intel and AMD systems running Linux kernel versions 5.14 and 5.15. 
 
 explain the synthetic data scripts, and toss up the output images.
+
+
+
+## notebooks
+
+### notebook 1
+
 
 ## Citing this project
 
