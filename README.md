@@ -31,7 +31,7 @@ Danio rerio, also known as the zebrafish, is a common model organism for its cle
 
 Here is my recommended way to use this GitHub repository.
 
-###Step 1: Clone the repository
+### Step 1: Clone the repository
 
 Option 1 -- clone by terminal command
 
@@ -41,21 +41,21 @@ Option 1 -- clone by terminal command
 
 Option 2 -- clone by clicking
 
-###Step 2: Change working directory into the project folder
+### Step 2: Change working directory into the project folder
 
   ```sh
   cd path/of/project/directory
   ```
 
-###Step 3:
+### Step 3:
 do venv
 
-###Step 3:
+### Step 3:
 pip install -r requirements.txt
 
-###Step 4:
+### Step 4:
 
-###Step 5:
+### Step 5:
 
 > __For this example, the working directory is the repository root directory.__ 
 
