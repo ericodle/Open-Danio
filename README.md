@@ -129,7 +129,7 @@ pip install -r requirements.txt
 This is a simple project containing only three main modules: 2D_trajectory_analysis.py, 3D_trajectory_analysis.py, and novel_tank_dive.py.
 These modules are organized in the "src" (source) sub-directory.
 There are other directories as well, such as "imgs" (images), "tests", and "notebooks".
-A detailed explaation of these 
+Later sections provide a detailed explanation of these elements.
 
 
 ### Step 5: Deactivate the virtual environment
