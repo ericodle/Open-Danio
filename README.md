@@ -130,7 +130,7 @@ When finished working, it is best to deactivate the virtual environment and chan
 
   ```sh
 deactivate
-cd
+cd ~
   ```
 
 ...or you can just close the command line interface window.
