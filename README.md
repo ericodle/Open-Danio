@@ -110,7 +110,7 @@ Now we're really in. (⌐■_■)
 
 ### Step 3: Install requirements.txt
 
-Run the following command to install specific software versions to your virtual environment.
+Avoid "dependency hell" by installing specific software versions known to work well together.
 
   ```sh
 pip install -r requirements.txt
