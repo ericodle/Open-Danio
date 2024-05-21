@@ -59,7 +59,7 @@ source env/bin/activate
 ```
 
 
-### Step 3: Install requirements.txt
+### Step 4: Install requirements.txt
 
 Avoid "dependency hell" by installing specific software versions known to work well together.
 
@@ -67,23 +67,48 @@ Avoid "dependency hell" by installing specific software versions known to work w
 pip install -r requirements.txt
   ```
 
-### Step 4: Use Open-Danio
-
-This is a simple project containing only three main modules: 2D_trajectory_analysis.py, 3D_trajectory_analysis.py, and novel_tank_dive.py.
-These modules are organized in the "src" (source) sub-directory.
-There are other directories as well, such as "imgs" (images), "tests", and "notebooks".
-Later sections provide a detailed explanation of how to use these elements.
-
 ### Step 5: Initialize Git LFS in your repository:
 
   ```sh
 git lfs install
   ```
 
-### Step X: freeze dependencies 
+### Step 6: Track large files:
+
+  ```sh
+git lfs track "*.zip"       # Track all .zip files
+git lfs track "*.tar.gz"    # Track all .tar.gz files
+git lfs track "*.bin"    # Track all .tar.gz files
+  ```
+
+
+### Step 7: Login to Github via CLI
+
+  ```sh
+git config --global user.email "Your@GitHub.Email"
+git config --global user.name "Your Github Username"
+  ```
+
+### Step 8: Add large file
+
+  ```sh
+git add <large-file.bin>        # Add large file to staging area
+git commit -m "Add large file"  # Commit large file
+git push                        # Push changes (large file will be uploaded via Git LFS)
+  ```
+
+### Step 6: freeze dependencies if they change
 
   ```sh
 pip freeze > requirements.txt
+  ```
+
+### Step 7: add, commit, and push requirements.txt (or any other file you worked on)
+
+  ```sh
+git add requirements.txt
+git commit -m "Add requirements.txt for project dependencies"
+git push
   ```
 
 ## src
