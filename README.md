@@ -25,48 +25,22 @@ Enter this into your computer's command line interface (terminal, control panel,
 
 If the first number is not a 3, update to Python3.
 
-## Setup
+## Git Going
 
-Here is an easy way to use this GitHub repository.
+Here is an easy way to use a GitHub repository for collaborative, remote development.
 
 ### Step 1: Clone the repository
 
 Open the command line interface and run:
   ```sh
-  git clone git@github.com:ericodle/Open-Danio.git
+  git clone https://github.com/ericodle/Open-Danio
   ```
-
-You have now downloaded the entire project, including all its sub-directories (folders) and files.
-(We will avoid using Git commands.)
 
 ### Step 2: Navigate to the project directory
-Find where your computer saved the project. On Linux, it will go to the Home directory by default.
-When you figure out the project path, run this command.
 
   ```sh
-  cd /path/to/project/directory
+  cd Open-Danio
   ```
-
-For example, the path was /home/ericodle/Open-Danio on my computer.
-Therefore, I entered the command:
-
-  ```sh
-  cd /home/ericodle/Open-Danio
-  ```
-If performed correctly, your command line interface should change from:
-
-```
-user@user:~$
-```
-
-to:
-
-```
-user@user:~/Open-Danio$
-```
-
-Good, we're in. (⌐■_■)
-
 
 ### Step 3: Create a virtual environment:
 Differences between software versions can break your programs and waste your time. 
@@ -74,38 +48,15 @@ Therefore, we use a **virtual environment** to ensure software versions on our c
 
 
 ```sh
-python3 -m venv environment-name
-```
-
-Your "environment-name" can be anything you want. 
-For simplicity, let's call it opendanio (one word, all lowercase).
-
-```sh
-python3 -m venv opendanio
+python3 -m venv env
 ```
 
 The virtual environment has been created. 
 We enter the environment to do our work by using the following command:
 
 ```sh
-source opendanio/bin/activate
+source env/bin/activate
 ```
-
-Enter your preferred name in place of "opendanio", if desired.
-
-When performed correctly, your command line interface prompt should change from something resembling 
-
-```
-user@user:~/Open-Danio$
-```
-
-to 
-
-```
-(opendanio) user@user:~/Open-Danio$
-```
-
-Now we're really in. (⌐■_■)
 
 
 ### Step 3: Install requirements.txt
@@ -123,17 +74,17 @@ These modules are organized in the "src" (source) sub-directory.
 There are other directories as well, such as "imgs" (images), "tests", and "notebooks".
 Later sections provide a detailed explanation of how to use these elements.
 
-
-### Step 5: Deactivate the virtual environment
-
-When finished working, it is best to deactivate the virtual environment and change directory (cd) out of the project directory. Enter the following command:
+### Step 5: Initialize Git LFS in your repository:
 
   ```sh
-deactivate
-cd ~
+git lfs install
   ```
 
-...or you can just close the command line interface window.
+### Step X: freeze dependencies 
+
+  ```sh
+pip freeze > requirements.txt
+  ```
 
 ## src
 
