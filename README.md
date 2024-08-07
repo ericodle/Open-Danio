@@ -13,7 +13,7 @@ While working on my master's thesis in Taiwan, I began playing around with Pytho
 
 Now I use this repository to demonstrate basic Github management skills and store bioinformatics lessons.
 
-## Prerequisite
+## Prerequisites
 
 Install [Python3](https://www.python.org/downloads/) on your computer.
 
@@ -25,7 +25,7 @@ Enter this into your computer's command line interface (terminal, control panel,
 
 If the first number is not a 3, update to Python3.
 
-## Git Going
+## Setup
 
 Here is an easy way to use a GitHub repository for collaborative, remote development.
 
@@ -210,17 +210,12 @@ Scripts used to generate synthetic test data are provided in respective sub-dire
 
 
 
-## notebooks
-
-### notebook 1
-
-
 ## Citing this project
 
 
 Project which sparked my interest in coding: [Evaluation of the therapeutic effects of dimethyl sulfoxide on FMR1 mutant zebrafish using open-source deep learning software](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwii7qGgzMKDAxVNmK8BHXF2D7sQFnoECAsQAQ&url=http%3A%2F%2Frportal.lib.ntnu.edu.tw%2Fbitstreams%2F2534e275-1fa0-44c6-883a-7024325cdcb1%2Fdownload&usg=AOvVaw0MRYBsjjBFlv8bwUM1aeuR&opi=89978449).
 
-If my amateur masters thesis is somehow beneficial to your work, kindly use the following citation:
+If my masters thesis is helpful to you, kindly use the following citation:
 
 ```
 @masterthesis{odleFMR1,
